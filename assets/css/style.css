@@ -1,0 +1,7 @@
+html, body { 
+    background-color: #FFFAE5;
+}
+
+.active-link { 
+    color: #FE5500 !important;
+}
