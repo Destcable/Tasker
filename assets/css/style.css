@@ -15,3 +15,7 @@ header {
     height: 1px;
     color: black;
 }
+
+.bg-orange { 
+    background-color: #EB7B26;
+}
