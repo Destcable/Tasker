@@ -2,6 +2,16 @@ html, body {
     background-color: #FFFAE5;
 }
 
+header { 
+    border-bottom: 1px solid black;
+}
+
 .active-link { 
     color: #FE5500 !important;
+}
+
+.separator { 
+    width: 100%;
+    height: 1px;
+    color: black;
 }
