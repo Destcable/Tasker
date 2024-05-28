@@ -16,6 +16,11 @@ header {
     color: black;
 }
 
+.icon-small { 
+    width: 20px;
+}
+
+
 .bg-orange { 
     background-color: #EB7B26;
 }
