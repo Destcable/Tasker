@@ -54,36 +54,13 @@
         </div>
     </section>
 
-    <section class="p-3 d-flex gap-3">
-        <div class="p-3 border rounded border-dark w-25" style="background-color: #FC95B4;">
-            <div class="align-items-center justify-content-center p-2 pt-1" style="background-color: #FE7CA3; display: inline-block;">
-                <img src="./assets/icons/calendar.svg" alt="calendarIcon" class="icon-small"> 
-            </div>
-            <div class="mt-2">
-                <p>Предстоящие задачи</p>
-                <h4>40</h4>
-            </div>
-        </div>
-
-        <div class="p-3 border rounded border-dark w-25" style="background-color: #ffce62;">
-            <div class="align-items-center justify-content-center p-2 pt-1" style="background-color: #ffc23d; display: inline-block;">
-                <img src="./assets/icons/calendar.svg" alt="calendarIcon" class="icon-small"> 
-            </div>
-            <div class="mt-2">
-                <p>Задачи в работе</p>
-                <h4>40</h4>
-            </div>
-        </div>
-
-        <div class="p-3 border rounded border-dark w-25" style="background-color: #0bc56d;">
-            <div class="align-items-center justify-content-center p-2 pt-1" style="background-color: #15b569; display: inline-block;">
-                <img src="./assets/icons/success.svg" alt="successIcon" class="icon-small"> 
-            </div>
-            <div class="mt-2">
-                <p>Выполненные задачи</p>
-                <h4>75</h4>
-            </div>
-        </div>
-    </section>
+    <section id="section-widgets" class="p-3 d-flex gap-3"></section>
 </body>
+<script src="./assets/js/components/widgets/widgetUpcomingTasks.js"></script>
+<script src="./assets/js/components/widgets/widgetInProgressTasks.js"></script>
+<script src="./assets/js/components/widgets/widgetCompleteTasks.js"></script>
+<script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/api/api.js"></script>
+<script src="./assets/js/services/auth.js"></script>
+<script src="./assets/js/home.js"></script>
 </html>
