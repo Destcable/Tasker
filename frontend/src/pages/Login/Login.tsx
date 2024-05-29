@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
+import { auth } from '../../services/auth';
 
 interface IFormAuth { 
     email: string,
@@ -10,7 +11,18 @@ const Login: FC = () => {
     const { register, handleSubmit } = useForm<IFormAuth>();
 
     const onSubmit = (data: IFormAuth) => { 
-        console.log(data);
+        const email = data.email;
+        const password = data.password;
+
+        auth.login(email, password)
+            .then(response => { 
+                const status = JSON.parse(response).status;
+
+                if ( status === true ) { 
+                    localStorage.setItem('email', email);
+                    localStorage.setItem('password', password);
+                }
+        })
     };
 
     return (
